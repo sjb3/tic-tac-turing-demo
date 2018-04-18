@@ -1,8 +1,8 @@
-import React from 'react';
-import {Route, IndexRoute} from 'react-router';
-import Template from '../containers/Template';
-import TicTacToe from '../containers/TicTacToe';
-import Profile from '../containers/Profile';
+import React from 'react'
+import {Route, IndexRoute} from 'react-router'
+import Template from '../containers/Template'
+import TicTacToe from '../containers/TicTacToe'
+import Profile from '../containers/Profile'
 
 const createRoutes = () => {
   return (
@@ -14,13 +14,13 @@ const createRoutes = () => {
         component={TicTacToe}
       />
       <Route
-        path='/profile'
+        path={'/profile'}
         component={Profile}
       />
     </Route>
   )
 }
 
-const Routes = createRoutes();
+const Routes = createRoutes()
 
-export default Routes;
+export default Routes
